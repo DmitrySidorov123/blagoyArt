@@ -1,0 +1,55 @@
+@media only screen and (max-width: 768px) {
+
+    .main-wrapper{
+        padding: 0;
+
+        header{
+            padding: 0;
+
+            .mob-nav{
+                display: block;
+            }
+
+            .search{
+                margin-bottom: 17px;
+
+                form, .right{
+                    display: none;
+                }
+            }
+            
+            .right.tablet{
+                display: none;
+            }
+
+            nav{
+                display: none !important;
+            }
+        }
+
+        .content{
+            padding: 0;
+
+            .slider{
+                height: 124px;
+
+                .banner {
+                    width: 191px !important;
+                    height: 43px !important;
+                    transform: translate(27px, -50%);
+
+                    span{
+                        padding-left: 10px !important;
+                        font-size: 14px !important;
+                        line-height: 16px !important;
+                    }
+                }
+
+                .slick-prev, .slick-next{
+                    width: 20px !important;
+                    height: 28px !important;
+                }
+            }
+        }
+    }
+}

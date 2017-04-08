@@ -1,0 +1,152 @@
+@media only screen and (max-width: 1230px) and (min-width: 768px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+
+        .search{
+            margin-bottom: 6px;
+
+            .left{
+                .logo-box{
+
+                   div{
+                       font-size: 12px;
+                   }
+
+                   a{
+                       width: 179px;
+                   }
+                }
+
+                form{
+                    height: 31px;
+                    margin-left: 33px;
+
+                    input{
+                        width: 221px;
+                        font-size: 11px;
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+            .right{
+                .phone-number{
+                    font-size: 15px;
+                }
+                .timetable{
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .right.tablet{
+            align-self: flex-end;
+            display: inline-flex;
+            align-items: center;
+            padding-right: 16px;
+            margin-bottom: 10px;
+
+            .num{
+                width: 20px;
+                height: 20px;
+                background: #cb944c;
+                border-radius: 50%;
+                font-weight: 600;
+                margin-left: 8px;
+                position: relative;
+
+                span{
+                    color: white;
+                    font-weight: 600;
+                    @include center();
+                }
+
+            }
+
+            .product{
+                margin-left: 6px;
+            }
+
+            .product, .account{
+                text-transform: uppercase;
+                font-weight: 600;
+                color: #252a54;
+                font-size: 15px;
+            }
+
+            .account{
+                display: flex;
+                align-items:center;
+                margin-left: 20px;
+
+                img{
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        nav {
+            .right{
+                display: none;
+            }
+
+            .left{
+                width: 100%;
+
+                .menu{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .menu > li{
+                    margin: 0;
+                    font-size: 11px !important;
+
+                    .catalog-wr{
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .content{
+        padding: 20px 0;
+
+        .slider{
+            width: 100%;
+            height: 165px;
+
+            .banner{
+                width: 280px !important;
+                height: 65px !important;
+
+                span{
+                    padding-left: 18px !important;
+                    font-size: 20px !important;
+                    line-height: 25px !important;
+                }
+            }
+
+            .slick-prev, .slick-next{
+                width: 20px !important;
+                height: 65px !important;
+            }
+
+            .slick-prev:before,
+            .slick-next:before{
+                width: 8px;
+                height: 14px;
+                background-image: url("../img/mob-arrow-left.png");
+            }
+
+            .slick-dots{
+                bottom: -35px;
+            }
+        }
+    }
+}
